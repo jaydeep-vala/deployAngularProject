@@ -18,16 +18,13 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 
 // import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user.component';
-import { WheatherWidgetMainComponent } from './wheather-widget-main/wheather-widget-main.component';
+
 
 const routes: Routes = [{path:"register/login",component:UserLoginComponent},
 {path:"register",component:UserRegisterComponent},
 {path:"register/login/uheader",canActivate:[AuthGuard],component:UserHeaderComponent,children:[
   {
   path:"profile",component:ProfileComponent
-  },
-  {
-  path:"",component:WheatherWidgetMainComponent
   },
   {
   path:"event",component:FromEventComponent

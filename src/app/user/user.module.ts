@@ -10,7 +10,6 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserHeaderComponent } from './user-header/user-header.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ProfileComponent } from './profile/profile.component';
-import { WheatherWidgetMainComponent } from './wheather-widget-main/wheather-widget-main.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { RxjsOperatorComponent } from './rxjs-operator/rxjs-operator.component';
 import { RetryComponent } from './retry/retry.component';
@@ -29,7 +28,6 @@ import { SearchFuncnaComponent } from './search-funcna/search-funcna.component';
     UserHeaderComponent, 
     UserListComponent, 
     ProfileComponent, 
-    WheatherWidgetMainComponent, 
     FromEventComponent, 
     RxjsOperatorComponent, 
     RetryComponent, 
