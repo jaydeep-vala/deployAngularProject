@@ -1,0 +1,116 @@
+{
+    "user": [{
+            "firstname": "jaydip1",
+            "lastname": "vala",
+            "username": "jaydip-vala",
+            "email": "jayub763@gmail.com",
+            "password": "jaydip",
+            "id": 1
+        },
+        {
+            "firstname": "naresh",
+            "lastname": "vala",
+            "username": "jaydip-vala",
+            "email": "naresh763@gmail.com",
+            "password": "jaydip",
+            "id": 2
+        },
+        {
+            "firstname": "ravi",
+            "lastname": "vala",
+            "username": "jaydip-vala",
+            "email": "ravi763@gmail.com",
+            "password": "jaydip",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "firstname": "manshi",
+            "lastname": "rathod",
+            "username": "gdfgf",
+            "email": "manshi123@gmail.com",
+            "password": "gfdsg"
+        },
+        {
+            "id": 6,
+            "firstname": "bhartiben",
+            "lastname": "vala",
+            "username": "bharti-ben",
+            "email": "bhartiben123@gmail.com",
+            "password": "hjsdfj"
+        },
+        {
+            "id": 7,
+            "firstname": "pravinbhai",
+            "lastname": "vala",
+            "username": "pravinbhai",
+            "email": "pravinbhai@gamil.com",
+            "password": "fdsdfds"
+        },
+        {
+            "id": 8,
+            "firstname": "ghanshyam",
+            "lastname": "vala",
+            "username": "ghanshyan-vala",
+            "email": "vala112@gmail.com",
+            "password": "dsfsd"
+        },
+        {
+            "id": 9,
+            "firstname": "jingu",
+            "lastname": "devi",
+            "username": "jingu-devi",
+            "email": "jingu12@gmail.com",
+            "password": "sdfdf"
+        },
+        {
+            "id": 10,
+            "firstname": "jimish ",
+            "lastname": "gajjar",
+            "username": "jimish-gajjar",
+            "email": "jimish1122@gmail.com",
+            "password": "fdsfsdf"
+        }
+    ],
+    "admin": [{
+            "firstname": "jaydip vala",
+            "lastname": "vala",
+            "username": "admin-jd",
+            "email": "admin@gmail.com",
+            "password": "admin",
+            "id": 1
+        },
+        {
+            "id": 2,
+            "firstname": "jaydip",
+            "lastname": "vala",
+            "username": "fsdffs",
+            "email": "jayub763@gmail.com",
+            "password": "fsdffdf"
+        },
+        {
+            "id": 3,
+            "firstname": "gopal",
+            "lastname": "sd",
+            "username": "dfds",
+            "email": "gopal123@gmail.com",
+            "password": "dgfd"
+        },
+        {
+            "id": 4,
+            "firstname": "kanji",
+            "lastname": "solanki",
+            "username": "kano",
+            "email": "kanji1212@gmail.com",
+            "password": "kani"
+        },
+        {
+            "id": 5,
+            "firstname": "manu",
+            "lastname": "solanki",
+            "username": "manu",
+            "email": "manu1212@gmail.com",
+            "password": "manu"
+        }
+    ]
+}

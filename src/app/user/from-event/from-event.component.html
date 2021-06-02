@@ -1,0 +1,135 @@
+<h2 class="ml-3" style="color: white;">From Event</h2>
+
+<div class="row">
+    <div class="col-md-4 ml-3">
+        <div class="card">
+            <div class="card-header">
+                Add Video
+            </div>
+            <div class="card-body">
+                <button class="btn btn-primary" #addbtn>Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 ml-3">
+        <div class="card">
+            <div class="card-header">
+                Video Stream
+            </div>
+            <div class="card-body">
+                <ul id="elContainer">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4 ml-3">
+        <select class="form-control" #name>
+            <!-- <option value="default" disabled>default</option> -->
+            <option *ngFor="let item of nameSource" value="{{item}}">{{item}}</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <strong style="color: white;">Zip Event</strong>
+        <hr>
+        <!-- <div id=""></div> -->
+        <ul *ngFor="let user of userData">
+            <li style="color:white">{{user}}</li>
+        </ul>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-4 ml-3">
+        <select class="form-control" #color>
+            <!-- <option value="default" disabled>default</option> -->
+            <option *ngFor="let item of colorSource" value="{{item}}">{{item}}</option>
+        </select>
+    </div>
+</div>
+<hr style="color:white;background-color: white;">
+<h2 class="mt-3" style="color:white">Filter Concept start</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Filter By length
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Name</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let filt of filterData">
+                            <td scope="row">{{filt.id}}</td>
+                            <td>{{filt.name}}</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Filter By Gender
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let filt of filterGender">
+                            <td scope="row">{{filt.id}}</td>
+                            <td>{{filt.name}}</td>
+                            <td>{{filt.gender}}</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Filter nth number
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let filt of filterNumber">
+                            <td scope="row">{{filt.id}}</td>
+                            <td>{{filt.name}}</td>
+                            <td>{{filt.gender}}</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

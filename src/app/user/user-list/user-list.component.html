@@ -1,0 +1,28 @@
+<p>user-list works!</p>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Email</th>
+            <th scope="col">UserName</th>
+            <th scope="col">Password</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of collection">
+            <th scope="row" style="color: white;">{{user.id}}</th>
+            <td style="color: white;">{{user.firstname}}</td>
+            <td style="color: white;">{{user.lastname}}</td>
+            <td style="color: white;">{{user.email}}</td>
+            <td style="color: white;">{{user.username}}</td>
+            <td style="color: white;">{{user.password}}</td>
+
+        </tr>
+    </tbody>
+</table>
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>

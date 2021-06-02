@@ -1,0 +1,63 @@
+<ngx-loading-bar style="color: white;"></ngx-loading-bar>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <a class="navbar-brand" href="register/login/uheader">{{userName}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" routerLink="profile">Profile<span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="wheather">Weather<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="event">FromEvent<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="rxjs">Rxjs-Operator<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="retry">Retry<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="DT&DUC">DT&DUC<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="sMap">sMap<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="Ssfunc">searchSMap<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="register/login/uheader/UserList">List<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" (click)="clearing()" href="user/register/login">Logout</a>
+            </li>
+            <strong class="badge badge-primary" *ngIf="exclusive">Exclusive</strong>
+            <li class="dropdown" style="margin-left: 530px">
+                <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-align-justify"></i></a>
+                <div class="dropdown-content">
+                    <a routerLink="profile">Profile<span class="sr-only">(current)</span></a>
+                    <a (click)="clearing()" href="user/register/login">Logout</a>
+                </div>
+            </li>
+            <!-- <input type="text" placeholder="UserName" class="nav-item" #food>&nbsp;
+            <button class="btn btn-primary" (click)="submit(food.value)">Check</button> -->
+        </ul>
+
+    </div>
+</nav>
+
+<div class="main_box">
+
+    <router-outlet></router-outlet>
+</div>
+<div class="foot">
+    <h1>Footer Works!</h1>
+</div>

@@ -1,0 +1,26 @@
+<ngx-loading-bar style="background-color: white;"></ngx-loading-bar>
+<h4 style="color: white;">debouce-time and Distinct-Until-Changed works!</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <span style="color: white;">Search Ex&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;</span><strong class="text-primary">debouce-time</strong>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label col-form-label-lg bg-light">Search</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search..." #myInput>
+                </div>
+            </div>
+            <span *ngIf="fatchedWord != null" style="color: white;">Requested Data :<Strong class="text-success" style="background-color: white;"> {{fatchedWord}}</Strong></span>
+        </div>
+        <div class="col-md-6">
+            <span style="color: white;">Search Ex&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;</span><strong class="text-warning">Distinct-Until-time</strong>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label col-form-label-lg bg-light">Search</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search..." #myInput1>
+                </div>
+            </div>
+            <span *ngIf="fatchedWord1 != null" style="color: white;">Requested Data :<Strong class="text-success" style="background-color: white;"> {{fatchedWord1}}</Strong></span>
+        </div>
+    </div>
+</div>

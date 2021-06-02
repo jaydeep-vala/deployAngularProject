@@ -1,0 +1,61 @@
+<nav class="navbar">
+    <input type="text" class="form-control" name="firstname" [(ngModel)]="firstname" (ngModelChange)="Search()" placeholder="Enter FirstName to search">
+</nav>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col" (click)="sort('id')">User Id&nbsp;<i class="fa fa-sort"></i></th>
+            <th scope="col" (click)="sort('firstname')">FirstName</th>
+            <th scope="col" (click)="sort('lastname')">LastName</th>
+            <th scope="col">Email</th>
+            <th scope="col">UserName</th>
+            <th scope="col">Password</th>
+            <th scope="col">operation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of collection | orderBy:key:reverse | paginate : {itemsPerPage:3,currentPage:page};">
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.firstname}}</td>
+
+            <td>{{user.lastname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.password}}</td>
+            <td><button class="btn btn-lg btn-outline-danger" (click)="onDelete(user.id,$event)">delete</button>&nbsp;&nbsp;
+                <button class="btn btn-lg btn-outline-success" (click)="open(content)" routerLink="update/{{user.id}}">Edit</button>
+            </td>
+        </tr>
+
+
+    </tbody>
+    <pagination-controls class="text-center" (pageChange)="page = $event"></pagination-controls>
+</table>
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-group">
+
+                <div class="input-group">
+                    <router-outlet></router-outlet>
+                    <div class="input-group-append">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</ng-template>
+
+
+
+<hr>
+
+<pre>{{ closeResult }}</pre>

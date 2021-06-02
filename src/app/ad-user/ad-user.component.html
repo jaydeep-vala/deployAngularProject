@@ -1,0 +1,69 @@
+<!-- <div id="grad1" *ngIf="visible"> -->
+<!-- <ul  class="foo"> -->
+
+
+<!-- </li>
+    <li> -->
+<!-- &nbsp;&nbsp; -->
+
+
+<!-- </ul> -->
+
+<div class="main_box" *ngIf="visible">
+    <input type="checkbox" id="check">
+    <div class="btn_one">
+        <label for="check" style="color: white;">
+        <i class="fas fa-bars" style="width: 10%;"></i>
+      </label>
+    </div>
+    <div class="sidebar_menu">
+        <div class="logo">
+            <a href="#">CodingLab</a>
+        </div>
+        <div class="btn_two">
+            <label for="check">
+            <i class="fas fa-3x fa-sun sun" style="color: yellow;"></i>&nbsp;
+          </label>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><i class="fas fa-qrcode" style="color: white;"></i> &nbsp;&nbsp;
+                    <a routerLink="admin/register" *ngIf="visible" (click)="showhideUtility()">admin</a>
+                </li>
+                <li>
+                    <i class="fas fa-link" style="color: white;"></i> &nbsp;&nbsp;
+                    <a routerLink="user/register" *ngIf="visible" (click)="showhideUtility()">user</a> &nbsp;
+                </li>
+                <li>
+                    <i class="fas fa-calendar-week" style="color: white;"></i>&nbsp;&nbsp;
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <i class="fas fa-question-circle" style="color: white;"></i>&nbsp;&nbsp;
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <i class="fas fa-sliders-h" style="color: white;"></i>&nbsp;&nbsp;
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-volume" style="color: white;"></i>&nbsp;&nbsp;
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <i class="far fa-comments" style="color: white; "></i>&nbsp;&nbsp;
+                    <a href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a> &nbsp;&nbsp;
+                <a href="#"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;
+                <a href="#"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

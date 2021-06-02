@@ -1,0 +1,11 @@
+{
+    "demo": {
+        "id": 1,
+        "email": "jayub763@gmail.com",
+        "gender": "Male",
+        "name": "jaydip vala",
+        "phone": "9898227298",
+        "skill": "angular,typescript,html,css"
+    }
+
+}
