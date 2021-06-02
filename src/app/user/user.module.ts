@@ -16,7 +16,6 @@ import { RxjsOperatorComponent } from './rxjs-operator/rxjs-operator.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebouceTimeDUCComponent } from './debouce-time-duc/debouce-time-duc.component';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
-import { NotificationComponent } from './notification/notification.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { SearchFuncnaComponent } from './search-funcna/search-funcna.component';
 
@@ -34,7 +33,7 @@ import { SearchFuncnaComponent } from './search-funcna/search-funcna.component';
     FromEventComponent, 
     RxjsOperatorComponent, 
     RetryComponent, 
-    DebouceTimeDUCComponent, NotificationComponent, SwitchMapComponent, SearchFuncnaComponent ],
+    DebouceTimeDUCComponent, SwitchMapComponent, SearchFuncnaComponent ],
   imports: [
     CommonModule,
     UserRoutingModule,

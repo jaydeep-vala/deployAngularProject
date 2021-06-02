@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { DebouceTimeDUCComponent } from './debouce-time-duc/debouce-time-duc.component';
 import { FromEventComponent } from './from-event/from-event.component';
-import { NotificationComponent } from './notification/notification.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RetryComponent } from './retry/retry.component';
 import { RxjsOperatorComponent } from './rxjs-operator/rxjs-operator.component';
@@ -44,9 +43,6 @@ const routes: Routes = [{path:"register/login",component:UserLoginComponent},
   },
   {
     path:'DT&DUC',component:DebouceTimeDUCComponent
-  },
-  {
-    path:'hello',component:NotificationComponent
   },
   {
     path:"sMap",component:SwitchMapComponent
